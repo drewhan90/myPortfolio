@@ -1,0 +1,17 @@
+// Colors 
+$background-color: #FFFFFF;
+$yellow: #F1C234;
+$green: #2FB2B1;
+$red: #D64652;
+$blue: #5072B3;
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
