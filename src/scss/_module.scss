@@ -1,0 +1,133 @@
+/* BUTTONS */
+.nav-btn {
+    display: block;
+    width: 85px;
+    height: 80px;
+    
+    border-radius: 15px;
+
+    @include mq('tablet'){
+        width: 100px;
+        height: 93px;
+    }
+}
+
+.nav-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .home-nav & {
+        top: 75px;
+        left: 20px;
+
+        @include mq('tablet'){
+            top: 120px;
+            left: 100px;
+        }
+        @include mq('tablet-wide'){
+            top: 150px;
+            left: 150px;
+        }
+    }
+    & .nav-btn {
+        background-color: $yellow;
+        box-shadow: inset -7px -7px 2px $yellow-i;
+        // Btn onClick
+        &:active {
+            box-shadow: inset -4px -2px 2px $yellow-i;
+        }
+    }
+}
+
+.nav-portfolio {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .home-nav & {
+        top: 75px;
+        right: 20px;
+        @include mq('tablet'){
+            top: 120px;
+            right: 100px;
+        }
+        @include mq('tablet-wide'){
+            top: 150px;
+            right: 150px;
+        }
+    }
+    & .nav-btn {
+        background-color: $green;
+        box-shadow: inset -7px -7px 2px $green-i;
+        &:active {
+            box-shadow: inset -4px -2px 2px $green-i;
+        }
+    }
+}
+
+.nav-contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .home-nav & {
+        bottom: 75px;
+        left: 20px;
+        @include mq('tablet'){
+            bottom: 120px;
+            left: 100px;
+        }
+        @include mq('tablet-wide'){
+            bottom: 150px;
+            left: 150px;
+        }
+    }
+    & .nav-btn {
+        background-color: $red;
+        box-shadow: inset -7px -7px 2px $red-i;
+        &:active {
+            box-shadow: inset -4px -2px 2px $red-i;
+        }
+    }
+}
+
+.nav-resume {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    .home-nav & {
+        bottom: 75px;
+        right: 20px;
+        @include mq('tablet'){
+            bottom: 120px;
+            right: 100px;
+        }
+        @include mq('tablet-wide'){
+            bottom: 150px;
+            right: 150px;
+        }
+    }
+    & .nav-btn {
+        background-color: $blue;
+        box-shadow: inset -7px -7px 2px $blue-i;
+        &:active {
+            box-shadow: inset -4px -2px 2px $blue-i;
+        }
+    }
+}
+
+/* LOGO */
+.logo-container {
+    position: absolute;
+    width: 170px;
+    // Horizontally and Vertically Center
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq('tablet'){
+        width: 300px;
+    }
+}
