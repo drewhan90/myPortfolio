@@ -1,21 +1,35 @@
 /* BUTTONS */
 .nav-btn {
     display: block;
-    width: 85px;
-    height: 80px;
-    
+    width: 60px;
+    height: 60px;
+
     border-radius: 15px;
 
+    .home-nav & {
+        width: 85px;
+        height: 80px;
+        
+        @include mq('tablet'){
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &.isSelected {
+        background-color: #F8F8F8 !important; 
+        box-shadow: inset 4px 4px 6px 1px #9B9B9B !important;
+    }
     @include mq('tablet'){
-        width: 100px;
-        height: 93px;
+        width: 80px;
+        height: 80px;
     }
 }
 
 .nav-about {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
 
     .home-nav & {
         top: 75px;
@@ -42,8 +56,8 @@
 
 .nav-portfolio {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
 
     .home-nav & {
         top: 75px;
@@ -68,8 +82,8 @@
 
 .nav-contact {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 20px;
+    left: 20px;
 
     .home-nav & {
         bottom: 75px;
@@ -94,8 +108,8 @@
 
 .nav-resume {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
 
     .home-nav & {
         bottom: 75px;
@@ -120,14 +134,55 @@
 
 /* LOGO */
 .logo-container {
-    position: absolute;
-    width: 170px;
-    // Horizontally and Vertically Center
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 94px;
+    
+    .home-nav & {
+        // Horizontally and Vertically Center
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        @include mq('tablet'){
+            width: 300px;
+        }
+    }
+    @include mq('tablet'){
+        width: 130px;
+    }
+}
+
+.prj-container {
+    position: relative;
+    display: block;
+    padding-bottom: 25px;
+    width: 100%;
+    overflow: hidden;
 
     @include mq('tablet'){
-        width: 300px;
+        float: left;
+        width: 50%;
+    }
+}
+
+.prj-overlay {
+    
+}
+
+.prj-tag {
+    position: absolute;
+    padding: 10px 15px;
+    top: 0;
+    left: 0;
+
+    background-color: $blue;
+    color: #fff;
+
+    & h1 {
+        margin: 0;
+        @include font-size(16);
     }
 }
