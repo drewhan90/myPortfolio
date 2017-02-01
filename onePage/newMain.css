@@ -26,29 +26,48 @@ body {
     height: 60px;
 
     background-color: black;
+    border-radius: 15px;
 }
 
 .nav-about {
-    position: absolute;
     top: 0;
     left: 0;
-    margin: 20px;
 }
 .nav-portfolio {
-    position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
 }
 .nav-contact {
-    position: absolute;
     bottom: 0;
     left: 0;
-    margin: 20px;
 }
 .nav-resume {
-    position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.nav-element {
+    position: absolute;
     margin: 20px;
+}
+
+.logo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-logo {
+    width: 100px;
+    /*height: 225px;*/
+    top: 0;
+    left: 50%;
+
+    /* half of height and width */
+    margin: -115px 0 0 -150px;*/
+}
+
+img {
+    max-width: 100%;
+    min-width: 100%;
 }
